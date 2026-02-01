@@ -1,0 +1,36 @@
+Best order to create them (so nothing blocks you)
+
+src/data/load.py
+You can’t do anything until data loads reliably.
+
+src/features/build.py
+Get to X, y quickly and prove a baseline works.
+
+src/models/train.py
+Train a baseline model (Linear/Ridge) and save it.
+
+src/models/evaluate.py
+Add metrics + one plot; now you can report results.
+
+src/pipelines/main.py
+Glue it together into a one-command run.
+
+src/data/validate.py
+Add guardrails once the pipeline runs end-to-end.
+
+src/data/split.py
+Improve evaluation realism (split by year, etc.).
+
+src/models/predict.py
+Inference for “new wrestler rows” and demo usage.
+
+src/utils/seed.py and src/utils/logging.py (optional)
+Polish and reproducibility.
+
+What you can run at each milestone
+
+After #3: you can train something
+
+After #4: you can measure it
+
+After #5: you can run everything end-to-end with one command
